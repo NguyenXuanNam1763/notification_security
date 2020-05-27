@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNoNotificationAccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification access is disabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#f00"
+        />
+
+    <Button
+        android:id="@+id/btnEnableNotificationAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
+        android:text="Enable notification access"/>
+
+    <Button
+        android:id="@+id/btnCreateNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
+        android:text="Create Notification"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All notifications will appear here:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </ScrollView>
+
+</LinearLayout>
